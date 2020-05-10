@@ -1,0 +1,11 @@
+@import '../../node_modules/@angular/material/theming';
+
+$nga-primary: mat-palette($mat-cyan); //Deklaruje zmienną dla palety podstawowej i inicjuje ją z paletą $mat-cyan.
+$nga-accent: mat-palette($mat-cyan, A200, A100, A400); //Deklaruje i inicjuje zmienną dla palety kolorów dodatkowych, określając domyślny, jaśniejszy i ciemniejszy odcień $mat-cyan.
+$nga-warn: mat-palette($mat-red); //Deklaruje i inicjuje zmienną dla palety błędów i ostrzeżeń.
+
+$nga-theme: mat-light-theme($nga-primary, $nga-accent, $nga-warn); //Tworzy motyw (obiekt Sass zawierający wszystkie palety).
+$nga-background: map-get($nga-theme, background); //Deklaruje i inicjuje zmienną dla palety tła.
+$nga-foreground: map-get($nga-theme, foreground); //Deklaruje i inicjuje zmienną dla palety tekstu i ikon.
+$nga-typography: mat-typography-config(); //Deklaruje i inicjuje zmienną dla typografii.
+
